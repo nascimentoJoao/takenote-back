@@ -12,7 +12,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name = "notes")
+@Table(name = "table_notes")
 @EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, allowGetters = true)
 public class Note implements Serializable{
@@ -37,6 +37,8 @@ public class Note implements Serializable{
 	@LastModifiedDate
 	private Date updatedAt;
 
+	private User user;
+	
 	public Long getId() {
 		return id;
 	}

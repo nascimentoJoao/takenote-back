@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="groups")
+@Table(name="table_group")
 public class Group implements Serializable{
 	
 	/* Um grupo deve estar vinculado a um ID. */

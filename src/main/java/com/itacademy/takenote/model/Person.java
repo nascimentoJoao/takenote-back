@@ -14,13 +14,11 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "person")
-
+@Table(name = "table_person")
 public class Person implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
 	private Integer id;
 	
 	@NotBlank

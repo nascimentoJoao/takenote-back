@@ -27,7 +27,7 @@ public class NoteController {
 	
 	@RequestMapping(value="/notes", method=RequestMethod.POST)
 	public Note createNote(@Valid @RequestBody Note note) {
-		System.out.println(note.toString());
+		//System.out.println(note.toString());
 		return noteRepository.save(note);
 	}
 	
@@ -60,6 +60,7 @@ public class NoteController {
 		return ResponseEntity.ok().build();
 		
 	}
+	
 	
 	/**
 	 * @GetMapping("/addresses")
